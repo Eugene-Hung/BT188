@@ -1,0 +1,2108 @@
+================================
+PROJECT INFO 
+================================
+  project_file = D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\cur_cfg_filesystem.x2p
+   devkit_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+ configuration = filesystem
+-PROJECT PROPERTIES-
+  IDE_PROJECT:cur_cfg_filesystem
+  OUTDIR     :D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA
+
+SOURCE FILES
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\subsys0_config4.hcf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys0_config2.htf
+
+CONFIG NAME = filesystem
+PROPS
+defaultdict(<type 'str'>, {'DEFS': '', 'LIBPATHS': '', 'DBG_CORE': '', 'permission': '', 'INCPATHS': '', 'description': '', 'system_label': 'QCC512X_CONFIG', 'argument': '', 'default': '', 'STRIP_SYMBOLS': '', 'OUTPUT_TYPE': '', 'LIBS': '', 'OUTPUT': '', 'FS_ROOT': '', 'TYPE': 'curator_config', 'BUILD_TYPE': '', 'PRESERVED_LIBS': ''})
+------------------------------------
+DEVKIT INFO 
+------------------------------------
+  Param -d =  C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+  Script =  C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/ubuild/ubuild.py
+  XML FILE = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\merge_ubuild.chk
+-KITIDENT-
+  compatibility_list:['{34E71291-920E-4fe0-8871-5F119C8D0E40}']
+  uuid              :{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  checksum          :4f7d43da67eab9fee1b3281d4115cc6b
+  URI               :kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  build_time        :1576071077.869456
+  filter            :qcc3400;qcc512*;qcc302*;qcc303*
+  version           :6.4.2
+  build             :26
+  dependencies      :
+            
+  fsprefix          :qcc512x_qcc302x
+  devkit_group      :{BBAC163C-41BE-4ce7-B236-236F15FF18CA}
+  target            :x86
+-TOP LEVEL ELEMENTS-
+  info          :True
+  commands      :True
+  toolchain     :True
+  ext_id        :True
+  doc           :True
+  ext_info      :True
+  locks         :True
+  plugins       :True
+  id            :True
+  configurations:True
+    -COMMANDS-
+      coredumpWithAppsSqif:{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems including apps sqif'}
+      eraseApps           :{'run': './tools/python27/python.exe', 'description': 'Run pydbg to erase the apps area'}
+      config_tool         :{'run': './tools/bin/ADKConfigTool.exe', 'description': 'Run the config tool'}
+      setMemoryOption     :{'run': './tools/python27/python.exe', 'description': 'Setup Memory Module Type to support'}
+      scramble_aspk       :{'run': './tools/python27/python.exe', 'description': 'Scramble ASPK'}
+      deploy              :{'run': './tools/python27/python.exe', 'description': 'Deploys an ADK Project binary to a device'}
+      make                :{'run': 'bin/make.exe', 'description': 'GNU Make'}
+      coredump            :{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems'}
+      versions_workspace  :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various workspace files'}
+      privateLibExport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+      buildDFU            :{'run': './tools/python27/python.exe', 'description': 'Collect or build input files and create DFU file'}
+      build               :{'run': './tools/python27/python.exe', 'description': 'Builds an ADK Project'}
+      clean               :{'run': './tools/python27/python.exe', 'description': 'Clean an ADK Project'}
+      pydbgCoredump       :{'run': './tools/python27/python.exe', 'description': 'Run pydbg on a coredump'}
+      dfu_setup           :{'run': './tools/python27/python.exe', 'description': 'Setup DFU security'}
+      buildFlashImage     :{'run': './tools/python27/python.exe', 'description': 'Generate a single flash image file'}
+      versions_devkit     :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various devkit files'}
+      privateLibImport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+====================
+-TOOLS-
+  system:{'device': 'plugins/debugger/device_control_hydra.dll', 'core_groups': {'app': {'p1': 'plugins/debugger/core_debug_kalimba.dll'}, 'audio': {'p0': 'plugins/debugger/core_debug_kalimba.dll', 'p1': 'plugins/debugger/core_debug_kalimba.dll'}}}
+SDB File: C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb
+tool_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys0_config2.htf c:\users\eugene~1\appdata\local\temp\tmpzxaqjm -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+3 words used to enforce data alignment.
+Copying D:\QCC_Project\TEST1QCC3021\images\curator_firmware\common\config\subsys0_config1.hcf
+Copying D:\QCC_Project\TEST1QCC3021\images\curator_firmware\common\patches\subsys0_patch0_fw00000503.hcf
+Copying D:\QCC_Project\TEST1QCC3021\images\curator_firmware\common\patches\subsys6_patch0_fw00000503.hcf
+Packing directory...
+Translating filesystem image by 0x000000
+================================
+PROJECT INFO 
+================================
+  project_file = D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\fw_cfg_filesystem.x2p
+   devkit_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+ configuration = filesystem
+-PROJECT PROPERTIES-
+  IDE_PROJECT:fw_cfg_filesystem
+  OUTDIR     :D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA
+
+SOURCE FILES
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys1_config1.htf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys3_config1.htf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys7_config1.hcf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\subsys7_config3.htf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\subsys3_config2.htf
+
+CONFIG NAME = filesystem
+PROPS
+defaultdict(<type 'str'>, {'DEFS': '', 'LIBPATHS': '', 'DBG_CORE': '', 'permission': '', 'INCPATHS': '', 'description': '', 'system_label': 'QCC512X_CONFIG', 'argument': '', 'default': '', 'STRIP_SYMBOLS': '', 'OUTPUT_TYPE': '', 'LIBS': '', 'OUTPUT': '', 'FS_ROOT': '', 'TYPE': 'firmware_config', 'BUILD_TYPE': '', 'PRESERVED_LIBS': ''})
+------------------------------------
+DEVKIT INFO 
+------------------------------------
+  Param -d =  C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+  Script =  C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/ubuild/ubuild.py
+  XML FILE = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\merge_ubuild.chk
+-KITIDENT-
+  compatibility_list:['{34E71291-920E-4fe0-8871-5F119C8D0E40}']
+  uuid              :{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  checksum          :4f7d43da67eab9fee1b3281d4115cc6b
+  URI               :kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  build_time        :1576071077.869456
+  filter            :qcc3400;qcc512*;qcc302*;qcc303*
+  version           :6.4.2
+  build             :26
+  dependencies      :
+            
+  fsprefix          :qcc512x_qcc302x
+  devkit_group      :{BBAC163C-41BE-4ce7-B236-236F15FF18CA}
+  target            :x86
+-TOP LEVEL ELEMENTS-
+  info          :True
+  commands      :True
+  toolchain     :True
+  ext_id        :True
+  doc           :True
+  ext_info      :True
+  locks         :True
+  plugins       :True
+  id            :True
+  configurations:True
+    -COMMANDS-
+      coredumpWithAppsSqif:{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems including apps sqif'}
+      eraseApps           :{'run': './tools/python27/python.exe', 'description': 'Run pydbg to erase the apps area'}
+      config_tool         :{'run': './tools/bin/ADKConfigTool.exe', 'description': 'Run the config tool'}
+      setMemoryOption     :{'run': './tools/python27/python.exe', 'description': 'Setup Memory Module Type to support'}
+      scramble_aspk       :{'run': './tools/python27/python.exe', 'description': 'Scramble ASPK'}
+      deploy              :{'run': './tools/python27/python.exe', 'description': 'Deploys an ADK Project binary to a device'}
+      make                :{'run': 'bin/make.exe', 'description': 'GNU Make'}
+      coredump            :{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems'}
+      versions_workspace  :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various workspace files'}
+      privateLibExport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+      buildDFU            :{'run': './tools/python27/python.exe', 'description': 'Collect or build input files and create DFU file'}
+      build               :{'run': './tools/python27/python.exe', 'description': 'Builds an ADK Project'}
+      clean               :{'run': './tools/python27/python.exe', 'description': 'Clean an ADK Project'}
+      pydbgCoredump       :{'run': './tools/python27/python.exe', 'description': 'Run pydbg on a coredump'}
+      dfu_setup           :{'run': './tools/python27/python.exe', 'description': 'Setup DFU security'}
+      buildFlashImage     :{'run': './tools/python27/python.exe', 'description': 'Generate a single flash image file'}
+      versions_devkit     :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various devkit files'}
+      privateLibImport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+====================
+-TOOLS-
+  system:{'device': 'plugins/debugger/device_control_hydra.dll', 'core_groups': {'app': {'p1': 'plugins/debugger/core_debug_kalimba.dll'}, 'audio': {'p0': 'plugins/debugger/core_debug_kalimba.dll', 'p1': 'plugins/debugger/core_debug_kalimba.dll'}}}
+SDB File: C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb
+tool_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys1_config1.htf c:\users\eugene~1\appdata\local\temp\tmp40ufyo -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys3_config1.htf c:\users\eugene~1\appdata\local\temp\tmp40ufyo -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\subsys7_config3.htf c:\users\eugene~1\appdata\local\temp\tmp40ufyo -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\subsys3_config2.htf c:\users\eugene~1\appdata\local\temp\tmp40ufyo -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+4 words used to enforce data alignment.
+Copying patch: D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\output\stre_rom_v02_release\build\patchbin\subsys3_patch0_fw000012B2.hcf
+No EXTCONST_PATH property in project: Assuming no audio constants required
+Copying D:\QCC_Project\TEST1QCC3021\images\btss_firmware\qfn80\patches\subsys1_patch0_fw000033EF.hcf to c:\users\eugene~1\appdata\local\temp\tmp40ufyo\subsys1_patch0_fw000033EF.hcf and removing wildcard
+Packing directory...
+Translating filesystem image by 0x000000
+  Header block starting at 0x00000000, 12 bytes
+  Entry metadata block starting at 0x0000000c, 96 bytes
+  Names block starting at 0x0000006c, 168 bytes
+  File data block starting at 0x00000114, 69684 bytes
+  Footer block starting at 0x00011148, 24 bytes
+================================
+PROJECT INFO 
+================================
+  project_file = D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\dev_cfg_filesystem.x2p
+   devkit_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+ configuration = filesystem
+-PROJECT PROPERTIES-
+  IDE_PROJECT:dev_cfg_filesystem
+  OUTDIR     :D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA
+
+SOURCE FILES
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\subsys7_config2.htf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys0_config3.htf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys1_config2.htf
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\user_selected_specific_memory_type.htf
+
+CONFIG NAME = filesystem
+PROPS
+defaultdict(<type 'str'>, {'DEFS': '', 'LIBPATHS': '', 'DBG_CORE': '', 'permission': '', 'INCPATHS': '', 'description': '', 'system_label': 'QCC512X_CONFIG', 'argument': '', 'default': '', 'STRIP_SYMBOLS': '', 'OUTPUT_TYPE': '', 'LIBS': '', 'OUTPUT': '', 'FS_ROOT': '', 'TYPE': 'device_config', 'BUILD_TYPE': '', 'PRESERVED_LIBS': ''})
+------------------------------------
+DEVKIT INFO 
+------------------------------------
+  Param -d =  C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+  Script =  C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/ubuild/ubuild.py
+  XML FILE = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\merge_ubuild.chk
+-KITIDENT-
+  compatibility_list:['{34E71291-920E-4fe0-8871-5F119C8D0E40}']
+  uuid              :{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  checksum          :4f7d43da67eab9fee1b3281d4115cc6b
+  URI               :kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  build_time        :1576071077.869456
+  filter            :qcc3400;qcc512*;qcc302*;qcc303*
+  version           :6.4.2
+  build             :26
+  dependencies      :
+            
+  fsprefix          :qcc512x_qcc302x
+  devkit_group      :{BBAC163C-41BE-4ce7-B236-236F15FF18CA}
+  target            :x86
+-TOP LEVEL ELEMENTS-
+  info          :True
+  commands      :True
+  toolchain     :True
+  ext_id        :True
+  doc           :True
+  ext_info      :True
+  locks         :True
+  plugins       :True
+  id            :True
+  configurations:True
+    -COMMANDS-
+      coredumpWithAppsSqif:{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems including apps sqif'}
+      eraseApps           :{'run': './tools/python27/python.exe', 'description': 'Run pydbg to erase the apps area'}
+      config_tool         :{'run': './tools/bin/ADKConfigTool.exe', 'description': 'Run the config tool'}
+      setMemoryOption     :{'run': './tools/python27/python.exe', 'description': 'Setup Memory Module Type to support'}
+      scramble_aspk       :{'run': './tools/python27/python.exe', 'description': 'Scramble ASPK'}
+      deploy              :{'run': './tools/python27/python.exe', 'description': 'Deploys an ADK Project binary to a device'}
+      make                :{'run': 'bin/make.exe', 'description': 'GNU Make'}
+      coredump            :{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems'}
+      versions_workspace  :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various workspace files'}
+      privateLibExport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+      buildDFU            :{'run': './tools/python27/python.exe', 'description': 'Collect or build input files and create DFU file'}
+      build               :{'run': './tools/python27/python.exe', 'description': 'Builds an ADK Project'}
+      clean               :{'run': './tools/python27/python.exe', 'description': 'Clean an ADK Project'}
+      pydbgCoredump       :{'run': './tools/python27/python.exe', 'description': 'Run pydbg on a coredump'}
+      dfu_setup           :{'run': './tools/python27/python.exe', 'description': 'Setup DFU security'}
+      buildFlashImage     :{'run': './tools/python27/python.exe', 'description': 'Generate a single flash image file'}
+      versions_devkit     :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various devkit files'}
+      privateLibImport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+====================
+-TOOLS-
+  system:{'device': 'plugins/debugger/device_control_hydra.dll', 'core_groups': {'app': {'p1': 'plugins/debugger/core_debug_kalimba.dll'}, 'audio': {'p0': 'plugins/debugger/core_debug_kalimba.dll', 'p1': 'plugins/debugger/core_debug_kalimba.dll'}}}
+SDB File: C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb
+tool_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\QCC3021-AA_DEV-BRD-R2-AA\subsys7_config2.htf c:\users\eugene~1\appdata\local\temp\tmpza4knt -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys0_config3.htf c:\users\eugene~1\appdata\local\temp\tmpza4knt -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\subsys1_config2.htf c:\users\eugene~1\appdata\local\temp\tmpza4knt -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+
+>>> [C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\bin\ConfigCmd.exe -noprefix binary D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\user_selected_specific_memory_type.htf c:\users\eugene~1\appdata\local\temp\tmpza4knt -system QCC512X_CONFIG -quiet -database C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools\config\hydracore_config.sdb]
+Success
+
+
+
+1 words used to enforce data alignment.
+Packing directory...
+Translating filesystem image by 0x000000
+  Header block starting at 0x00000000, 12 bytes
+  Entry metadata block starting at 0x0000000c, 60 bytes
+  Names block starting at 0x00000048, 84 bytes
+  File data block starting at 0x0000009c, 192 bytes
+  Footer block starting at 0x0000015c, 24 bytes
+================================
+PROJECT INFO 
+================================
+  project_file = D:\QCC_Project\TEST1QCC3021\apps\libs\libs_qcc512x_qcc302x.x2p
+   devkit_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+ configuration = makefile_project
+-PROJECT PROPERTIES-
+  IDE_PROJECT:libs_qcc512x_qcc302x
+  OUTDIR     :D:\QCC_Project\TEST1QCC3021\apps\libs
+
+SOURCE FILES
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_api.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_api.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_caps_parse.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_caps_parse.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_aac.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_aac.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_aptx_adaptive.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_aptx_adaptive.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_atrac.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_atrac.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_aptx.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_aptx.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_aptx_acl_sprint.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_aptx_acl_sprint.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_aptxhd.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_aptxhd.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_faststream.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_faststream.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_tws.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_csr_tws.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_mp3.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_mp3.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_sbc.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_codec_sbc.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_command_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_command_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_data_block.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_data_block.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_l2cap_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_l2cap_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_packet_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_packet_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_process_command.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_process_command.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_profile_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_profile_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_sdp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_sdp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_shim.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\a2dp\a2dp_shim.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\afh_channel_map\CONFIG_KYMERA\afh_channel_map.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\afh_channel_map\afh_channel_map.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\afh_channel_map\afh_channel_map.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi_host_if.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi_host_if.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi_msg.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi_protocol.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi_task.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\ahi\ahi_task.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_common_state.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_common_state.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_config_read.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_configure.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_disabled_state.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_disabled_state.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_disconnect_audio_check.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_enabled_state.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_enabled_state.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_gain.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_licence_check.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_sm.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_sm.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_uninitialised_state.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\anc_uninitialised_state.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_config_data.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_config_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_config_read.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_config_write.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_config_write.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_configure.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_configure_coefficients.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_configure_coefficients.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_data.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_disconnect_audio_check.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_gain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_licence_check.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\anc\CONFIG_HYDRACORE\anc_tuning_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio\audio.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio\audio.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_anc_tuning\audio_anc_tuning.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_anc_tuning\audio_anc_tuning.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_anc_tuning\audio_anc_tuning_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_anc_tuning\audio_anc_tuning_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_config\audio_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_config\audio_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_data_types\audio_data_types.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware_aec.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware_aec.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware_aec_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware_aec_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware_output.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_hardware\audio_hardware_output.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\CONFIG_I2S_MCLK\audio_i2s_mclk.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_CSRA6620.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_CSRA6620.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_SSM2518.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_SSM2518.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_mclk.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_i2s_common\audio_i2s_mclk.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_broadcast.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_broadcast.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_mono_aac.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_mono_aac.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_mono_aptx.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_mono_aptx.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_mono_sbc.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_mono_sbc.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_stereo.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_chain_config_stereo.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_context.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_context.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_forward.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_forward.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_rtp_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_rtp_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_task.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_task.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_ttp_latency.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_a2dp\audio_input_a2dp_ttp_latency.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue_broadcast.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue_broadcast.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_analogue\audio_input_analogue_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast_packetiser.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_broadcast\audio_input_broadcast_packetiser.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_common\audio_input_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_common\audio_input_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_common\audio_input_common_forward.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_common\audio_input_common_states.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_common\audio_input_common_states.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_i2s\audio_input_i2s.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_i2s\audio_input_i2s.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_i2s\audio_input_i2s_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_i2s\audio_input_i2s_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_broadcast.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_broadcast.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_driver.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_driver.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_spdif\audio_input_spdif_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws_chain_config_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws_chain_config_mono_aac.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws_chain_config_mono_aac.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_tws\audio_input_tws_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_usb\audio_input_usb.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_usb\audio_input_usb.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_usb\audio_input_usb_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_usb\audio_input_usb_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_chain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_chain.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_defs.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_dsp_if.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_dsp_if.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_file.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_file.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_play.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_play.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_utils.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_input_voice_prompts\audio_input_voice_prompts_utils.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_instance\audio_instance.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_instance\audio_instance.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_chain_interconnections.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_chain_interconnections.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_channel_roles.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_connection.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_connection.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_core.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_core.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_core_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_core_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_input.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_input.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_latency.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_processing.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_processing.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_processing_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_processing_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_processing_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_processing_multiband_compander.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_processing_multiband_compander.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_resampler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_resampler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_resampler_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_resampler_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_speaker.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_speaker.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_speaker_chain_configs.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_mixer\audio_mixer_speaker_chain_configs.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_music_processing\audio_music_processing.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_music_processing\audio_music_processing.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output\audio_output.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output\audio_output_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output\audio_output_gain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output\audio_output_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_broadcast\audio_output_broadcast_chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_broadcast\audio_output_broadcast_chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_broadcast\audio_output_broadcast.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_broadcast\audio_output_broadcast.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_chain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_chain.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_packetiser.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_packetiser.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_task.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\audio_output_tws_task.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\sbc_encoder_params.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_tws\sbc_encoder_params.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_output_unused\audio_output_unused.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_common\CONFIG_HYDRACORE\audio_plugin_ra.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_common\audio_plugin_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_common\audio_plugin_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_forwarding\audio_plugin_forwarding.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_forwarding\audio_plugin_forwarding.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_if\audio_plugin_if.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_music_params\audio_plugin_music_params.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_music_variants\CONFIG_KYMERA\audio_plugin_music_variants.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_music_variants\audio_plugin_music_variants.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_output_variants\audio_plugin_output_variants.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_ucid\audio_plugin_ucid.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_voice_prompts_variants\audio_plugin_voice_prompts_variants.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_plugin_voice_variants\CONFIG_KYMERA\audio_plugin_voice_variants.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_ports\audio_ports.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_ports\audio_ports.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_processor\audio_processor.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_processor\audio_processor.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_ucid\audio_ucid.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_capture_chain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_capture_chain.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_common_chain_config_novtt.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_common_chain_config_novtt.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_common_chain_config_vtt.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_common_chain_config_vtt.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_common_chain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_common_chain.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_control.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_control.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_handlers.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_handlers.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_trigger_chain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_assistant\audio_voice_assistant_trigger_chain.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_dsp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_dsp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_messages.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_states.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_states.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_tones.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_common\audio_voice_common_volume.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_hfp\audio_voice_hfp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_hfp\audio_voice_hfp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_hfp\audio_voice_hfp_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_hfp\audio_voice_hfp_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_hfp\audio_voice_hfp_tasks.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_usb\audio_voice_usb.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_usb\audio_voice_usb.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_usb\audio_voice_usb_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_usb\audio_voice_usb_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\audio_voice_usb\audio_voice_usb_tasks.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_absolute_volume.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_absolute_volume.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_avctp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_browsing.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_browsing_control.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_browsing_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_browsing_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_caps.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_caps_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_caps_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_connect_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_connect_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_continuation.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_continuation_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_continuation_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_element_attributes.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_element_attributes_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_element_attributes_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_l2cap_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_l2cap_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_mediaplayer.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_mediaplayer.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_metadata_transfer.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_metadata_transfer.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_notification.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_notification_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_notification_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_passthrough.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_player_app_settings.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_player_app_settings_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_player_app_settings_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_profile_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_profile_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_sdp_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_sdp_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_sdp_records.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_send_response.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_send_response.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_shim.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_shim.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_passthrough.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_passthrough.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_unit_info.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_unit_info.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_vendor.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_signal_vendor.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_unit_subunit.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\avrcp\avrcp_vendor.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_bs_to_vm.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_is_same.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_is_zero.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_tp_bs_to_vm.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_tp_is_empty.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_tp_is_same.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_tp_set_empty.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_tp_vm_to_bs.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_typed_bs_to_vm.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_typed_is_empty.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_typed_is_same.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_typed_set_empty.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_typed_vm_to_bs.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\bdaddr\bdaddr_vm_to_bs.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_association.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_msg_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_msg_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_rx.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_rx.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_tx.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_tx.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast\broadcast_util.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\CONFIG_KYMERA\broadcast_cmd_scm_transport.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd_debug.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_cmd\broadcast_cmd_scm_transport.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_context\broadcast_context.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_context\broadcast_context.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_stream_service_record\broadcast_stream_service_record.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\broadcast_stream_service_record\broadcast_stream_service_record.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\byte_utils\byte_utils.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\byte_utils\byte_utils.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_bundle_management.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_list.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_list.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_path.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\chain\chain_path.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\config_store\config_store.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\config_store\config_store.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\CONFIG_PHY_PREFERENCES\dm_ble_phy_preferences.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionGetRole.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionInquire.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionInquireCancel.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionL2capUnregisterRequest.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionReadBtVersion.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionReadClassOfDevice.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionReadEirData.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionReadInquiryMode.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionReadInquiryTx.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionReadRemoteName.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionReadTxPower.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSdpAttributeSearchRequest.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSdpTerminatePrimitiveRequest.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmAddAuthDevice.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmChangeLinkKey.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmEncryptionKeyRefresh.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmGetAuthDevice.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmRegisterOutgoingService.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmSendKeypressNotificationRequest.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmSetSdpSecurityOut.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmSetSecurityLevel.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmSetTrustLevel.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmUnRegisterOutgoingService.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSmUpdateMruDevice.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSyncRenegotiate.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionSyncUnregister.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionWriteInquiryAccessCode.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionWriteInquiryTx.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionWriteInquiryscanActivity.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\ConnectionWritePagescanActivity.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\bluestack_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\bluestack_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\connection.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\connection_no_ble.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\connection_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\connection_shim.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\connection_shim.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\connection_tdl.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\connection_tdl.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_phy_preferences.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_acl.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_bad_message_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_bad_message_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_baseband_cache.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_baseband_cod.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_baseband_flushtimeout.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_baseband_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_baseband_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_baseband_name.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_baseband_scan.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_advertising.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_advertising.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_connection_parameters_update.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_connection_parameters_update.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_random_address.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_random_address.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_scanning.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_security.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_security.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_set_connection_parameters.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_ble_white_list.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_dut.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_dut_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_dut_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_clock_offset.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_link_quality.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_local_addr.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_local_version.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_remote_version.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_rssi.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_info_supp_features.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_inquiry.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_inquiry_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_inquiry_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_link_policy.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_link_policy_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_link_policy_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_page_timeout.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_page_timeout_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_page_timeout_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_read_tx_power_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_read_tx_power_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_attribute.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_authenticate.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_authorise.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_encrypt.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_mode.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_oob.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_sdp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_security_service.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_sync.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_sync_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\dm_sync_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\l2cap.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\l2cap_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\l2cap_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\l2cap_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\l2cap_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\rfc.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\rfc_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\rfc_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\rfc_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\rfc_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_mtu.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_register.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_search.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\sdp_service_attr_search.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\tcp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\tcp_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\tcp_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\tcp_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\tcp_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\udp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\udp_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\udp_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\udp_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\connection\udp_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator_bundle_files.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator_bundle_files.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator_capability_id_translator.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator_capability_id_translator.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator_processor_id_translator.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator_dkcs_reader.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\custom_operator\custom_operator_dkcs_reader.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\device_list\device_list.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\device_list\device_list.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\device\device.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\device\device.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\display\display.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\display\display.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\display_plugin_if\display_plugin_if.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\display_plugin_midas\display_midas.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\display_plugin_midas\display_midas.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\display_plugin_midas\display_plugin_midas.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\display_plugin_midas\display_plugin_midas.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\file_list\file_list.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\file_list\file_list.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_transport.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_transport.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_transport_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_transport_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_transport_gatt.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_transport_gatt.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_voice_assistant.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gaia\gaia_voice_assistant.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gain_utils\gain_utils.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gain_utils\gain_utils.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_access.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_characteristic_discovery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_characteristic_read.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_characteristic_write.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_descriptor_discovery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_disconnect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_downstream.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_message.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_message_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_notification_indication.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_primary_discovery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_relationship_discovery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_server_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_shim.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt\gatt_shim.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_destroy.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_discover.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_discover.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_external_msg_send.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_external_msg_send.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_notification.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_notification.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_ready_state.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_ready_state.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_write.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_apple_notification_client\gatt_apple_notification_client_write.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_destroy.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_discover.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_discover.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_notification.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_notification.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_read.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_read.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_write.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_client\gatt_battery_client_write.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_access.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_access.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_notify.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_read.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_battery_server\gatt_battery_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_client\gatt_broadcast_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_client\gatt_broadcast_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_client\gatt_broadcast_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_client\gatt_broadcast_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_client\gatt_broadcast_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server_access.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server_access.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_broadcast_server\gatt_broadcast_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_destroy.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_discovery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_discovery.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_write.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_client\gatt_client_write.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_client\gatt_device_info_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_client\gatt_device_info_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_client\gatt_device_info_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_client\gatt_device_info_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_client\gatt_device_info_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_client\gatt_device_info_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server_access.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server_access.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_device_info_server\gatt_device_info_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_access.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_access.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_api.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_api.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_private.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_gap_server\gatt_gap_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_client\gatt_heart_rate_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_client\gatt_heart_rate_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_client\gatt_heart_rate_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_client\gatt_heart_rate_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_client\gatt_heart_rate_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_client\gatt_heart_rate_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_heart_rate_server\gatt_heart_rate_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_discovery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_discovery.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_notification.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_notification.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_read.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_read.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_utils.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_utils.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_write.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_hid_client\gatt_hid_client_write.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_client\gatt_imm_alert_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_client\gatt_imm_alert_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_client\gatt_imm_alert_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_client\gatt_imm_alert_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_client\gatt_imm_alert_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_client\gatt_imm_alert_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_imm_alert_server\gatt_imm_alert_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_access.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_access.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_link_loss_server\gatt_link_loss_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_logging_server\gatt_logging_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_data.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_internal.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_manager\gatt_manager_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_running_speed_cadence_server\gatt_running_speed_cadence_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client_discovery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client_discovery.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_scan_params_client\gatt_scan_params_client_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_access.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_access.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_api.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_api.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_indication.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_indication.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_private.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_server\gatt_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server_db.dbi
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server_msg_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server_msg_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\gatt_transmit_power_server\gatt_transmit_power_server_uuids.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_at_cmd.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_audio.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_audio_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_audio_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_call.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_call_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_call_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_call_waiting.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_caller_id.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_caller_id_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_caller_id_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_csr_features.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_csr_features.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_current_calls.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_current_calls_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_current_calls_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dial.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dial_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dial_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dial_memory.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dial_number.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dtmf.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dtmf_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_dtmf_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_extended_error_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_extended_error_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_hs.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_hs_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_hs_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_hs_service_record.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_indicators.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_indicators.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_indicators_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_indicators_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_link_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_link_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_multiple_calls.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_multiple_calls_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_multiple_calls_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_network_operator.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_network_operator_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_network_operator_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_nrec_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_nrec_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_ok.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_ok.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_profile_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_profile_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_receive_data.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_receive_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_response_hold.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_response_hold_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_response_hold_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_rfc.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_rfc.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_ring_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_ring_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_sdp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_sdp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_send_data.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_send_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_service_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_service_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_service_record.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_shim.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_shim.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_slc.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_slc_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_slc_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_subscriber_num.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_subscriber_num_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_subscriber_num_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_voice.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_voice_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_voice_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_voice_tag.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_voice_tag_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_voice_tag_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_volume.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_volume_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_volume_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_wbs.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_wbs.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_wbs_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hfp\hfp_wbs_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_connect.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_connect.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_control_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_control_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_l2cap_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_l2cap_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_pin.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_profile_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_profile_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_sdp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid\hid_sdp.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid_upgrade\hid_upgrade.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\hid_upgrade\hid_upgrade.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\hydra_dev\hydra_dev.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\kalimba_if\kalimba_if.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\kalimba_standard_messages\kalimba_standard_messages.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\key_value_list\key_value_list.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\key_value_list\key_value_list.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\library\library.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_app.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_app.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_bdaddr.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_bdaddr.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_ble_tx_power.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_ble_tx_power.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_cl.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_cl.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_state.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\local_device\local_device_state.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\logging\logging.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\logging\logging.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\md5\main.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\md5\md5.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\md5\md5.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_client.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_client_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_extern.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_messages.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_object_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_packet_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_profile_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_server.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\obex\obex_server_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\operators\operators.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\operators\operators.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\operators\operators_framework.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\operators\operators_framework.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\packetiser_helper\audio_frame_metadata.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\packetiser_helper\packetiser_helper.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_extern.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_goep_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_int_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_interface.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_messages.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_set_phonebook.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_util.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pbapc\pbapc_util.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\pblock\pblock.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pblock\pblock.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\pio_common\pio_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\pio_common\pio_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power\power.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power\power.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_adapter\power_adapter.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_battery.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_battery.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_charger.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_charger.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_current_limiting.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_current_limiting.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_init.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_monitor.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_monitor.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_onchip.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_thermal.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_thermal.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\power_utils.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\CONFIG_HYDRACORE\power_battery_target.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip\CONFIG_HYDRACORE\power_utils.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip_adapter\power_onchip_adapter.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_onchip_adapter\power_onchip_adapter.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_config_read.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_config_read.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_config.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_debug.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_i2c.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_i2c.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_interrupt.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_interrupt.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_registers.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_status.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_status.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_task.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352\power_smb1352_task.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352_adapter\power_smb1352_adapter.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\power_smb1352_adapter\power_smb1352_adapter.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\print\print.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\ps_dynamic_config_store\ps_dynamic_config_store.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\ps_dynamic_config_store\ps_dynamic_config_store.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\protobuf\protobuf.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\protobuf\protobuf.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\region\region.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\region\region_matches_uuid32.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\region\region_read_unsigned.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\region\region_write_unsigned.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\resource_manager\resource_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\resource_manager\resource_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\resource_manager\resource_manager_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\rsa_decrypt\rsa_decrypt.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\rsa_decrypt\rsa_decrypt.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\rsa_pss_constants\rsa_pss_constants.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\rsa_pss_constants\rsa_pss_constants.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\rtime\rtime.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\rtime\rtime.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\rtime\wallclock.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\scm\scm.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\scm\scm_broadcast.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\scm\scm_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\scm\scm_receiver.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\scm_transport\scm_transport.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\scm_transport\scm_transport_broadcaster.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\scm_transport\scm_transport_receiver.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_arbitrary.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_features.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_l2cap.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_map.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_pbap.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_profile_version.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_rf_server_channel.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sdp_parse\sdp_parse_service_name.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\service\service.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\service\service_find_attribute.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\service\service_get_value.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\service\service_next_attribute.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\service\service_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver\imu_ppg_init.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver\imu_ppg_message_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver\imu_ppg_message_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver\imu_ppg_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver\imu_ppg_profile_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver\imu_ppg_profile_handler.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver\sport_health_driver.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver_imu_bmi160\sport_health_driver_imu_bmi160.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver_imu_bmi160\sport_health_driver_imu_bmi160.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver_ppg_max30102\sport_health_driver_ppg_max30102.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_driver_ppg_max30102\sport_health_driver_ppg_max30102.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_algo_utils.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_algo_utils.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_hub.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_hub.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_hub_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_hub_sm.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_hub_sm.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_sequencer.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_hub\sport_health_sequencer.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_logging\sport_health_log_compress.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_logging\sport_health_log_compress.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_logging\sport_health_logging.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sport_health_logging\sport_health_logging.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\spp_common\spp_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\spp_common\spp_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\spp_common\spp_common_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sppc\sppc.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\sppc\sppc_connect_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sppc\sppc_shim.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\sppc\sppc_shim.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\spps\spps.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\spps\spps_connect_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\spps\spps_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\spps\spps_sdp.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\spps\spps_service_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\spps\spps_shim.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\spps\spps_shim.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\system_clock\system_clock.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\system_clock\system_clock.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_accessory.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_accessory.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_adaptation.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_adaptation.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_adaptation_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_adaptation_common.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_gatt.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_gatt.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_rfcomm.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_adaptation\transport_rfcomm.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_manager\transport_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_manager\transport_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_manager\transport_manager_data_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_manager\transport_manager_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_manager\transport_manager_private.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\transport_manager\transport_manager_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\extended_audio_header.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\extended_audio_header.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\frame_info.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\frame_info.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\packet_master.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\rtp_packet_master.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\rtp_packet_master.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packet_master.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packet_master.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packet_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packet_slave.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packet_slave.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packetiser.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packetiser_common.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packetiser_master.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packetiser_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_packetiser\tws_packetiser_slave.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_synchronised_control\tws_synchronised_control.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\tws_synchronised_control\CONFIG_HYDRACORE\tws_synchronised_control.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_ctx.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_ctx.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_fw_if.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_fw_if_priv.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_host_if.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_host_if.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_host_if_data.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_host_if_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_msg_fw.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_msg_host.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_msg_internal.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_msg_vm.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_partition_data.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_partition_data.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_partition_data_priv.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_partition_validation.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_partition_validation.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_partitions.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_partitions.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_psstore.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_psstore.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_psstore_priv.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_sm.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\upgrade_sm.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\c_mont_mult.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\secrsa_padding.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\secrsa_padding.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\upgrade_fw_if.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\upgrade_fw_if_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\upgrade_partition_data_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\upgrade_partitions_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\upgrade_psstore_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\upgrade\CONFIG_HYDRACORE\upgrade_sm_config.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_audio.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_audio.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_battery_charging.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_battery_charging.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_class.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_class.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_class_private.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_hid.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_hid.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_mass_storage.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_mass_storage.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_mass_storage_fat16.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\usb_device_class\usb_device_mass_storage_fat16.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\vmal\vmal.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\vmal\CONFIG_HAVE_PIO_BANKS\vmal_pio.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\vmal\CONFIG_KYMERA\vmal_operator.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\vmal\CONFIG_KYMERA\vmal_transform.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\vmtypes\vmtypes.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\voice_assistant_audio_manager\voice_assistant_audio_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\voice_assistant_audio_manager\voice_assistant_audio_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\libs\voice_assistant_audio_manager\voice_assistant_audio_manager_handler.c
+D:\QCC_Project\TEST1QCC3021\apps\libs\voice_assistant_audio_manager\voice_assistant_audio_manager_private.h
+
+CONFIG NAME = makefile_project
+PROPS
+defaultdict(<type 'str'>, {'DEFS': '', 'SUBSYSTEM_NAME': '', 'BUILD_ARGUMENTS': 'CONFIGS=qcc512x_qcc302x EXTRA_WARNINGS=FALSE install', 'LIBPATHS': '..\\..\\..\\..\\installed_libs\\lib\\default_qcc512x_qcc302x\\native C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\installed_libs\\lib\\os\\qcc512x_qcc302x', 'CHIP_TYPE': 'qcc512x_qcc302x', 'DBG_CORE': '', 'INCPATHS': '..\\..\\..\\..\\installed_libs\\include\\profiles\\default_qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\standard', 'OUTPUT_TYPE': '', 'BUILD_LIBS_AS_PRIVATE': '', 'CLEAN_ARGUMENTS': 'CONFIGS=qcc512x_qcc302x clean', 'MAKEFILE_TO_CALL': 'Makefile', 'STRIP_SYMBOLS': '', 'HW_VARIANT': '', 'LIBS': '', 'OUTPUT': '', 'SW_VARIANT': '', 'devkit_group': '', 'BUILD_TYPE': 'DEBUG', 'PRESERVED_LIBS': ''})
+------------------------------------
+DEVKIT INFO 
+------------------------------------
+  Param -d =  C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+  Script =  C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/ubuild/ubuild.py
+  XML FILE = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\merge_ubuild.chk
+-KITIDENT-
+  compatibility_list:['{34E71291-920E-4fe0-8871-5F119C8D0E40}']
+  uuid              :{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  checksum          :4f7d43da67eab9fee1b3281d4115cc6b
+  URI               :kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  build_time        :1576071077.869456
+  filter            :qcc3400;qcc512*;qcc302*;qcc303*
+  version           :6.4.2
+  build             :26
+  dependencies      :
+            
+  fsprefix          :qcc512x_qcc302x
+  devkit_group      :{BBAC163C-41BE-4ce7-B236-236F15FF18CA}
+  target            :x86
+-TOP LEVEL ELEMENTS-
+  info          :True
+  commands      :True
+  toolchain     :True
+  ext_id        :True
+  doc           :True
+  ext_info      :True
+  locks         :True
+  plugins       :True
+  id            :True
+  configurations:True
+    -COMMANDS-
+      coredumpWithAppsSqif:{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems including apps sqif'}
+      eraseApps           :{'run': './tools/python27/python.exe', 'description': 'Run pydbg to erase the apps area'}
+      config_tool         :{'run': './tools/bin/ADKConfigTool.exe', 'description': 'Run the config tool'}
+      setMemoryOption     :{'run': './tools/python27/python.exe', 'description': 'Setup Memory Module Type to support'}
+      scramble_aspk       :{'run': './tools/python27/python.exe', 'description': 'Scramble ASPK'}
+      deploy              :{'run': './tools/python27/python.exe', 'description': 'Deploys an ADK Project binary to a device'}
+      make                :{'run': 'bin/make.exe', 'description': 'GNU Make'}
+      coredump            :{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems'}
+      versions_workspace  :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various workspace files'}
+      privateLibExport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+      buildDFU            :{'run': './tools/python27/python.exe', 'description': 'Collect or build input files and create DFU file'}
+      build               :{'run': './tools/python27/python.exe', 'description': 'Builds an ADK Project'}
+      clean               :{'run': './tools/python27/python.exe', 'description': 'Clean an ADK Project'}
+      pydbgCoredump       :{'run': './tools/python27/python.exe', 'description': 'Run pydbg on a coredump'}
+      dfu_setup           :{'run': './tools/python27/python.exe', 'description': 'Setup DFU security'}
+      buildFlashImage     :{'run': './tools/python27/python.exe', 'description': 'Generate a single flash image file'}
+      versions_devkit     :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various devkit files'}
+      privateLibImport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+====================
+-TOOLS-
+  system:{'device': 'plugins/debugger/device_control_hydra.dll', 'core_groups': {'app': {'p1': 'plugins/debugger/core_debug_kalimba.dll'}, 'audio': {'p0': 'plugins/debugger/core_debug_kalimba.dll', 'p1': 'plugins/debugger/core_debug_kalimba.dll'}}}
+Build using a makefile
+Added DEVKIT_ROOT=C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26 to the environment
+Running C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/bin/make.exe -s -f Makefile -R DEVKIT_ROOT=C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26 -j12 -Otarget CONFIGS=qcc512x_qcc302x EXTRA_WARNINGS=FALSE install CHIP_TYPE=qcc512x_qcc302x BUILD_TYPE=DEBUG PRIVATE_LIBS= PRIVATE_LIBS_SEED=1311 INCPATHS=..\..\..\..\installed_libs\include\profiles\default_qcc512x_qcc302x C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\apps\installed_libs\include\firmware_qcc512x_qcc302x C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\apps\installed_libs\include\firmware_qcc512x_qcc302x\app C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\apps\installed_libs\include\standard MAKEFILE_RULES_DIR=C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools in D:\QCC_Project\TEST1QCC3021\apps\libs
+
+>>> [C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/bin/make.exe -s -f Makefile -R DEVKIT_ROOT=C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26 -j12 -Otarget CONFIGS=qcc512x_qcc302x EXTRA_WARNINGS=FALSE install CHIP_TYPE=qcc512x_qcc302x BUILD_TYPE=DEBUG PRIVATE_LIBS= PRIVATE_LIBS_SEED=1311 's' MAKEFILE_RULES_DIR=C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools]
+SDK is C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools
+BUILDING FOR qcc512x_qcc302x
+
+
+
+================================
+PROJECT INFO 
+================================
+  project_file = D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\sink.x2p
+   devkit_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+ configuration = Speaker
+-PROJECT PROPERTIES-
+  IDE_PROJECT:sink
+  OUTDIR     :D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common
+
+SOURCE FILES
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\ahi_host_trb.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\ahi_host_trb.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\ahi_host_usb.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\ahi_host_usb.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\ahi_test.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\main.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\main.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_a2dp.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_a2dp.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_a2dp_aptx_adaptive.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_a2dp_aptx_adaptive.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_a2dp_capabilities.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_a2dp_capabilities.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_accessory.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_accessory.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ahi.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ahi.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ama.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ama.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_anc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_anc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_at_commands.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_at_commands.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_clock.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_indication.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_indication.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_prompts.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_prompts.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_routing.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_routing.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_ttp.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_audio_ttp.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_auth.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_auth.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_auto_power_off.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_auto_power_off.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp_browsing.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp_browsing.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp_browsing_channel.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp_browsing_channel.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp_qualification.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_avrcp_qualification.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_ble_gap.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_ble_gap.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_association.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_association.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_encryption.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_encryption.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_packetiser.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_packetiser.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_scm.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_broadcaster_scm.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_common.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_receiver.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ba_receiver.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_advertising.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_advertising.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_gap.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_gap.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_sc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_sc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_scanning.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ble_scanning.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_buttonmanager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_buttonmanager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_buttons.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_buttons.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_callmanager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_callmanager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_config.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_config.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_configmanager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_configmanager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_csr_features.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_csr_features.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_development.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_device_id.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_device_id.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_devicemanager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_devicemanager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dfu_ps.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dfu_ps.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_display.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_display.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dormant.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dormant.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_downloadable_caps.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_downloadable_caps.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dsp_capabilities.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dsp_capabilities.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dut.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_dut.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_enum.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_event_queue.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_event_queue.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_events.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_fast_pair.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_fast_pair.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_fm.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gaia.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gaia.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_ancs.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_ancs.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_ba.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_ba.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_battery.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_battery.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_dis.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_dis.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_gatt.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_gatt.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_hid.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_hid.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_hrs.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_hrs.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_ias.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_ias.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_spc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_client_spc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_common.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_common.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_db.db
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_device.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_hid_qualification.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_hid_qualification.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_hid_remote_control.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_hid_remote_control.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_init.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_init.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_ama.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_ama.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_ba.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_ba.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_battery.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_battery.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_dis.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_dis.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_fps.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_fps.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_gap.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_gap.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_gatt.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_gatt.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_hrs.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_hrs.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_ias.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_ias.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_lls.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_lls.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_logging.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_logging.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_rscs.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_rscs.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_tps.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_gatt_server_tps.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_hf_indicators.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_hf_indicators.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_hfp_data.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_hfp_data.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_hid.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_hid.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_hid_device_service_record.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_indicators.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_indicators.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_init.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_init.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_input_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_input_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_inquiry.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_inquiry.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_ir_remote_control.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_led_err.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_led_manager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_led_manager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_leddata.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_leds.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_leds.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_link_policy.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_link_policy.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_linkloss.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_linkloss.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_main_task.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_main_task.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_malloc_debug.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_malloc_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_mapc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_mapc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_multi_channel.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_multi_channel.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_multipoint.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_multipoint.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_music_processing.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_music_processing.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_nfc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_nfc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_partymode.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_partymode.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pbap.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pbap.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_peer.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_peer.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_peer_qualification.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_peer_qualification.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pio.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pio.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pio_debounce.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pio_debounce.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pmalloc_pools.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_pmalloc_pools.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_powermanager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_powermanager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_private_data.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_private_data.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sbc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sbc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_scan.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_scan.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_slc.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_slc.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_speech_recognition.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_speech_recognition.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sport_health.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sport_health.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sport_health_sm.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_sport_health_sm.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_spp_qualification.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_spp_qualification.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_statemanager.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_statemanager.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_states.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_swat.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_tap_ui.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_tap_ui.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_tones.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_tones.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_upgrade.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_upgrade.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_usb.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_usb.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_usb_debug.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_usb_debug.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_usb_descriptors.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_utils.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_utils.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_va_audio_tuning.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_va_audio_tuning.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_va_enable.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_va_if.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_va_if.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_volume.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_volume.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_watchdog.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_watchdog.h
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_wired.c
+D:\QCC_Project\TEST1QCC3021\apps\applications\sink\sink_wired.h
+
+CONFIG NAME = Activity_Monitoring_Headset
+PROPS
+defaultdict(<type 'str'>, {'BUILD_ID': 'C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\tools/ubuild/maker/buildid/examples/timestamp.py', 'DEFS': '__KALIMBA__ HAVE_32BIT_DATA_WIDTH INSTALL_HYDRA_LOG BLUELAB HYDRACORE GATT_RSCS_SERVER ADD_STEP_TO_RSCS GATT_RSCS_SERVER ACTIVITY_MONITORING SPORTS_HEALTH_LOGGING_DISABLE TRAPSET_CORE=1 TRAPSET_PSU=1 ENABLE_AHI_USB_HOST ENABLE_BATTERY_OPERATION ENABLE_CHARGER_V2 ENABLE_USB_TYPE_C DEVICE_ID_PSKEY ENABLE_AUDIO_CLOCK ENABLE_AUDIO_TTP ENABLE_AVRCP ENABLE_BREDR_SC ENABLE_DORMANT_SUPPORT ENABLE_DOWNLOADABLE_CAPS GATT_ENABLED GATT_BATTERY_SERVER GATT_FP_SERVER GATT_HRS_SERVER GATT_DIS_SERVER ENABLE_PBAP ENABLE_USB ENABLE_WATCHDOG INCLUDE_A2DP_EXTRA_CODECS INCLUDE_APTX_ACL_SPRINT INCLUDE_DSP THREE_WAY_CALLING ENABLE_USB_HUB_SUPPORT', 'FLASH_CONFIG': '..\\..\\64Mbit_default_flash_config.py', 'CHIP_TYPE': 'qcc512x_qcc302x', 'DBG_CORE': 'app/p1', 'INCPATHS': '..\\..\\..\\..\\installed_libs\\include\\profiles\\default_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\standard', 'OUTPUT_TYPE': 'EXECUTABLE', 'SW_VARIANT': 'Headset-Gaming', 'PRIVATE_DEFS': '', 'CHIP_NAME': 'QCC3021', 'EXTRA_WARNINGS': 'FALSE', 'LIBPATHS': '..\\..\\..\\..\\installed_libs\\lib\\default_qcc512x_qcc302x\\native ..\\..\\..\\..\\installed_libs\\lib\\os\\qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\lib\\os\\qcc512x_qcc302x', 'PRIVATE_INCPATHS': '', 'STRIP_SYMBOLS': 'FALSE', 'HW_VARIANT': 'QCC3021-AA_DEV-BRD-R2-AA', 'LIBS': 'a2dp audio_output audio_mixer audio_hardware audio_ports audio_processor_speed operators chain custom_operator file_list hfp audio audio_plugin_common avrcp connection bdaddr audio_voice_hfp audio_i2s_common audio_input_voice_prompts pblock pio_common power power_onchip power_onchip_adapter region sdp_parse gain_utils service vmal gatt gatt_device_info_server gatt_gap_server gatt_manager gatt_server gatt_client gatt_heart_rate_client gatt_transmit_power_server gatt_battery_server gatt_imm_alert_server gatt_imm_alert_client usb_device_class display display_plugin_midas upgrade byte_utils_hydra audio_input_a2dp audio_input_analogue audio_input_i2s audio_input_common audio_plugin_music_variants audio_plugin_voice_variants audio_input_usb tws_packetiser audio_input_tws gaia gatt_hid_client audio_config audio_music_processing ahi config_store ps_dynamic_config_store gatt_apple_notification_client gatt_device_info_client  gatt_device_info_server gatt_scan_params_client gatt_link_loss_server gatt_battery_client gatt_heart_rate_server obex md5 pbapc audio_input_spdif rtime packetiser_helper system_clock tws_synchronised_control audio_instance hid_upgrade hid audio_plugin_forwarding audio_output_tws audio_voice_common audio_voice_usb resource_manager rwcp_server anc audio_voice_assistant_low_power local_device  gatt_running_speed_cadence_server sport_health_algorithms sport_health_hub sport_health_driver sport_health_logging sport_health_driver_imu_bmi160 sport_health_driver_ppg_max30102 spp_common spps sppc transport_adaptation transport_manager voice_assistant_audio_manager protobuf gatt_fast_pair_server audio_anc_tuning rsa_pss_constants rsa_decrypt cryptoalgo', 'OUTPUT': 'sink', 'DEFAULT_LIBS': 'usb_early_init', 'BUILD_TYPE': 'DEBUG', 'PRESERVED_LIBS': 'qcc512x_qcc302x'})
+
+CONFIG NAME = Headset
+PROPS
+defaultdict(<type 'str'>, {'BUILD_ID': 'C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\tools/ubuild/maker/buildid/examples/timestamp.py', 'DEFS': '__KALIMBA__ HAVE_32BIT_DATA_WIDTH INSTALL_HYDRA_LOG BLUELAB HYDRACORE TRAPSET_CORE=1 TRAPSET_PSU=1 ENABLE_AHI_USB_HOST ENABLE_BATTERY_OPERATION ENABLE_CHARGER_V2 ENABLE_USB_TYPE_C BLE_ENABLED_WHEN_OFF DEVICE_ID_PSKEY ENABLE_DISPLAY ENABLE_DISPLAY_MIDAS ENABLE_AUDIO_CLOCK ENABLE_AUDIO_TTP ENABLE_AVRCP ENABLE_BREDR_SC ENABLE_DORMANT_SUPPORT ENABLE_DOWNLOADABLE_CAPS GATT_IAS_CLIENT ENABLE_GAIA GATT_ENABLED GATT_ANCS_CLIENT GATT_BATTERY_SERVER GATT_FP_SERVER GATT_IAS_SERVER GATT_IAS_SERVER GATT_LLS_SERVER GATT_TPS_SERVER ENABLE_PBAP ENABLE_UPGRADE ENABLE_USB ENABLE_USB_HID_UPGRADE ENABLE_WATCHDOG GATT_GAIA_SERVER INCLUDE_A2DP_EXTRA_CODECS INCLUDE_APTX_ACL_SPRINT INCLUDE_DSP THREE_WAY_CALLING ENABLE_USB_AUDIO_APP_STEREO_DESCRIPTORS ENABLE_USB_HUB_SUPPORT', 'FLASH_CONFIG': '..\\..\\64Mbit_default_flash_config.py', 'CHIP_TYPE': 'qcc512x_qcc302x', 'DBG_CORE': 'app/p1', 'INCPATHS': '..\\..\\..\\..\\installed_libs\\include\\profiles\\default_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\standard', 'OUTPUT_TYPE': 'EXECUTABLE', 'SW_VARIANT': 'Headset-Gaming', 'PRIVATE_DEFS': '', 'CHIP_NAME': 'QCC3021', 'EXTRA_WARNINGS': 'FALSE', 'LIBPATHS': '..\\..\\..\\..\\installed_libs\\lib\\default_qcc512x_qcc302x\\native ..\\..\\..\\..\\installed_libs\\lib\\os\\qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\lib\\os\\qcc512x_qcc302x', 'PRIVATE_INCPATHS': '', 'STRIP_SYMBOLS': 'FALSE', 'HW_VARIANT': 'QCC3021-AA_DEV-BRD-R2-AA', 'LIBS': 'a2dp audio_output audio_mixer audio_hardware audio_ports audio_processor_speed operators chain custom_operator file_list hfp audio audio_plugin_common avrcp connection bdaddr audio_voice_hfp audio_i2s_common audio_input_voice_prompts pblock pio_common power power_onchip power_onchip_adapter region sdp_parse gain_utils service vmal gatt gatt_device_info_server gatt_gap_server gatt_manager gatt_server gatt_client gatt_heart_rate_client gatt_transmit_power_server gatt_battery_server gatt_imm_alert_server gatt_imm_alert_client usb_device_class display display_plugin_midas upgrade byte_utils_hydra audio_input_a2dp audio_input_analogue audio_input_i2s audio_input_common audio_plugin_music_variants audio_plugin_voice_variants audio_input_usb tws_packetiser audio_input_tws gaia gatt_hid_client audio_config audio_music_processing ahi config_store ps_dynamic_config_store gatt_apple_notification_client gatt_device_info_client gatt_device_info_server gatt_scan_params_client gatt_link_loss_server gatt_battery_client gatt_heart_rate_server obex md5 pbapc audio_input_spdif rtime packetiser_helper system_clock tws_synchronised_control audio_instance hid_upgrade hid audio_plugin_forwarding audio_output_tws audio_voice_common audio_voice_usb resource_manager rwcp_server anc audio_voice_assistant_low_power local_device spp_common spps sppc transport_adaptation transport_manager voice_assistant_audio_manager protobuf gatt_fast_pair_server audio_anc_tuning rsa_pss_constants rsa_decrypt cryptoalgo', 'OUTPUT': 'sink', 'DEFAULT_LIBS': 'usb_early_init', 'BUILD_TYPE': 'DEBUG', 'PRESERVED_LIBS': 'qcc512x_qcc302x'})
+
+CONFIG NAME = Speaker
+PROPS
+defaultdict(<type 'str'>, {'BUILD_ID': 'C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\tools/ubuild/maker/buildid/examples/timestamp.py', 'DEFS': '__KALIMBA__ HAVE_32BIT_DATA_WIDTH INSTALL_HYDRA_LOG BLUELAB HYDRACORE TRAPSET_CORE=1 TRAPSET_PSU=1 ENABLE_AHI_USB_HOST ENABLE_BATTERY_OPERATION ENABLE_CHARGER_V2 ENABLE_USB_TYPE_C BLE_ENABLED_WHEN_OFF DEVICE_ID_PSKEY ENABLE_DISPLAY ENABLE_DISPLAY_MIDAS ENABLE_AUDIO_CLOCK ENABLE_AUDIO_TTP ENABLE_AVRCP ENABLE_BREDR_SC ENABLE_DORMANT_SUPPORT ENABLE_DOWNLOADABLE_CAPS GATT_IAS_CLIENT ENABLE_GAIA GATT_ENABLED GATT_ANCS_CLIENT GATT_BATTERY_SERVER GATT_FP_SERVER GATT_IAS_SERVER GATT_BATTERY_SERVER_PEER GATT_IAS_SERVER GATT_LLS_SERVER GATT_TPS_SERVER GATT_BATTERY_SERVER_REMOTE GATT_BATTERY_CLIENT GATT_DIS_CLIENT GATT_SPC_CLIENT GATT_HID_CLIENT ENABLE_PBAP ENABLE_PEER_BATTERY_LEVEL ENABLE_PEER PEER_TWS PEER_AVRCP ENABLE_UPGRADE ENABLE_USB ENABLE_USB_AUDIO ENABLE_USB_HID_UPGRADE ENABLE_WATCHDOG ENABLE_WIRED GATT_GAIA_SERVER INCLUDE_A2DP_EXTRA_CODECS INCLUDE_APTX_ACL_SPRINT INCLUDE_DSP THREE_WAY_CALLING ENABLE_USB_AUDIO_APP_STEREO_DESCRIPTORS ENABLE_USB_HUB_SUPPORT', 'FLASH_CONFIG': '..\\..\\64Mbit_default_flash_config.py', 'CHIP_TYPE': 'qcc512x_qcc302x', 'DBG_CORE': 'app/p1', 'INCPATHS': '..\\..\\..\\..\\installed_libs\\include\\profiles\\default_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\standard', 'OUTPUT_TYPE': 'EXECUTABLE', 'SW_VARIANT': 'Speaker_with_TWS', 'PRIVATE_DEFS': '', 'CHIP_NAME': 'QCC3021', 'EXTRA_WARNINGS': 'FALSE', 'LIBPATHS': '..\\..\\..\\..\\installed_libs\\lib\\default_qcc512x_qcc302x\\native ..\\..\\..\\..\\installed_libs\\lib\\os\\qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\lib\\os\\qcc512x_qcc302x', 'PRIVATE_INCPATHS': '', 'STRIP_SYMBOLS': 'FALSE', 'HW_VARIANT': 'QCC3021-AA_DEV-BRD-R2-AA', 'LIBS': 'a2dp audio_output audio_mixer audio_hardware audio_ports audio_processor_speed operators chain custom_operator file_list hfp audio audio_plugin_common avrcp connection bdaddr audio_voice_hfp audio_i2s_common audio_input_voice_prompts pblock pio_common power power_onchip power_onchip_adapter region sdp_parse gain_utils service vmal gatt gatt_device_info_server gatt_gap_server gatt_manager gatt_server gatt_client gatt_heart_rate_client gatt_transmit_power_server gatt_battery_server gatt_imm_alert_server gatt_imm_alert_client usb_device_class display display_plugin_midas upgrade byte_utils_hydra audio_input_a2dp audio_input_analogue audio_input_i2s audio_input_common audio_plugin_music_variants audio_plugin_voice_variants audio_input_usb tws_packetiser audio_input_tws gaia gatt_hid_client audio_config audio_music_processing ahi config_store ps_dynamic_config_store gatt_apple_notification_client gatt_device_info_client  gatt_device_info_server gatt_scan_params_client gatt_link_loss_server gatt_battery_client gatt_heart_rate_server obex md5 pbapc audio_input_spdif rtime packetiser_helper system_clock tws_synchronised_control audio_instance hid_upgrade hid audio_plugin_forwarding audio_output_tws audio_voice_common audio_voice_usb resource_manager rwcp_server anc audio_voice_assistant_low_power local_device spp_common spps sppc transport_adaptation transport_manager voice_assistant_audio_manager protobuf gatt_fast_pair_server audio_anc_tuning rsa_pss_constants rsa_decrypt cryptoalgo', 'OUTPUT': 'sink', 'DEFAULT_LIBS': 'usb_early_init', 'BUILD_TYPE': 'DEBUG', 'PRESERVED_LIBS': 'qcc512x_qcc302x'})
+
+CONFIG NAME = Speaker_Broadcast
+PROPS
+defaultdict(<type 'str'>, {'BUILD_ID': 'C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\tools/ubuild/maker/buildid/examples/timestamp.py', 'DEFS': '__KALIMBA__ HAVE_32BIT_DATA_WIDTH INSTALL_HYDRA_LOG BLUELAB HYDRACORE BROADCAST_PACKETISER_IS_CONTROLLED_BY_APP TRAPSET_CORE=1 TRAPSET_PSU=1 AFH_UPDATE_METHOD_SYNC_TRAIN ENABLE_AHI_USB_HOST ENABLE_BATTERY_OPERATION ENABLE_CHARGER_V2 ENABLE_USB_TYPE_C BLE_ENABLED_WHEN_OFF DEVICE_ID_PSKEY ENABLE_DISPLAY ENABLE_DISPLAY_MIDAS ENABLE_AUDIO_CLOCK ENABLE_AUDIO_TTP ENABLE_AVRCP ENABLE_BREDR_SC ENABLE_DORMANT_SUPPORT ENABLE_DOWNLOADABLE_CAPS GATT_IAS_CLIENT ENABLE_GAIA GATT_ENABLED GATT_ANCS_CLIENT GATT_BATTERY_SERVER GATT_FP_SERVER GATT_IAS_SERVER GATT_BATTERY_SERVER_PEER GATT_IAS_SERVER GATT_LLS_SERVER GATT_TPS_SERVER GATT_BATTERY_SERVER_REMOTE GATT_BATTERY_CLIENT GATT_DIS_CLIENT GATT_SPC_CLIENT GATT_HID_CLIENT ENABLE_PBAP ENABLE_BROADCAST_AUDIO ENABLE_UPGRADE ENABLE_USB ENABLE_USB_AUDIO ENABLE_USB_HID_UPGRADE ENABLE_WATCHDOG ENABLE_WIRED GATT_GAIA_SERVER INCLUDE_APTX_ACL_SPRINT INCLUDE_DSP THREE_WAY_CALLING ENABLE_USB_AUDIO_APP_STEREO_DESCRIPTORS ENABLE_USB_HUB_SUPPORT', 'FLASH_CONFIG': '..\\..\\64Mbit_default_flash_config.py', 'CHIP_TYPE': 'qcc512x_qcc302x', 'DBG_CORE': 'app/p1', 'INCPATHS': '..\\..\\..\\..\\installed_libs\\include\\profiles\\default_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x ..\\..\\..\\..\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\firmware_qcc512x_qcc302x\\app C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\include\\standard', 'OUTPUT_TYPE': 'EXECUTABLE', 'SW_VARIANT': 'Speaker_with_BA', 'PRIVATE_DEFS': '', 'CHIP_NAME': 'QCC3021', 'EXTRA_WARNINGS': 'FALSE', 'LIBPATHS': '..\\..\\..\\..\\installed_libs\\lib\\default_qcc512x_qcc302x\\native ..\\..\\..\\..\\installed_libs\\lib\\os\\qcc512x_qcc302x C:\\qtil\\ADK_QCC512X_QCC302X_WIN_6.4.2.26\\apps\\installed_libs\\lib\\os\\qcc512x_qcc302x', 'PRIVATE_INCPATHS': '', 'STRIP_SYMBOLS': 'FALSE', 'HW_VARIANT': 'QCC3021-AA_DEV-BRD-R2-AA', 'LIBS': 'a2dp audio_output audio_mixer audio_hardware audio_ports audio_processor_speed operators chain custom_operator file_list hfp audio audio_plugin_common avrcp connection bdaddr audio_voice_hfp audio_i2s_common audio_input_voice_prompts pblock pio_common power power_onchip power_onchip_adapter region sdp_parse gain_utils service vmal gatt gatt_device_info_server gatt_gap_server gatt_manager gatt_server gatt_client gatt_heart_rate_client gatt_transmit_power_server gatt_battery_server gatt_imm_alert_server gatt_imm_alert_client usb_device_class display display_plugin_midas upgrade byte_utils_hydra audio_input_a2dp audio_input_analogue audio_input_i2s audio_input_common audio_plugin_music_variants audio_plugin_voice_variants audio_input_usb tws_packetiser audio_input_tws gaia gatt_hid_client audio_config audio_music_processing ahi config_store ps_dynamic_config_store gatt_apple_notification_client gatt_device_info_client gatt_device_info_server gatt_scan_params_client gatt_link_loss_server gatt_battery_client gatt_heart_rate_server obex md5 pbapc audio_input_spdif rtime packetiser_helper system_clock tws_synchronised_control audio_instance hid_upgrade hid audio_plugin_forwarding anc audio_voice_common audio_voice_usb audio_output_broadcast broadcast_cmd broadcast_packetiser erasure_coding broadcast broadcast_context gatt_broadcast_server gatt_broadcast_client scm scm_transport broadcast_stream_service_record audio_input_broadcast afh_channel_map resource_manager rwcp_server anc audio_voice_assistant_low_power local_device spp_common spps sppc transport_adaptation transport_manager voice_assistant_audio_manager protobuf gatt_fast_pair_server audio_anc_tuning rsa_pss_constants rsa_decrypt cryptoalgo', 'OUTPUT': 'sink', 'DEFAULT_LIBS': 'usb_early_init', 'BUILD_TYPE': 'DEBUG', 'PRESERVED_LIBS': 'qcc512x_qcc302x'})
+------------------------------------
+DEVKIT INFO 
+------------------------------------
+  Param -d =  C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+  Script =  C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/ubuild/ubuild.py
+  XML FILE = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\merge_ubuild.chk
+-KITIDENT-
+  compatibility_list:['{34E71291-920E-4fe0-8871-5F119C8D0E40}']
+  uuid              :{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  checksum          :4f7d43da67eab9fee1b3281d4115cc6b
+  URI               :kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  build_time        :1576071077.869456
+  filter            :qcc3400;qcc512*;qcc302*;qcc303*
+  version           :6.4.2
+  build             :26
+  dependencies      :
+            
+  fsprefix          :qcc512x_qcc302x
+  devkit_group      :{BBAC163C-41BE-4ce7-B236-236F15FF18CA}
+  target            :x86
+-TOP LEVEL ELEMENTS-
+  info          :True
+  commands      :True
+  toolchain     :True
+  ext_id        :True
+  doc           :True
+  ext_info      :True
+  locks         :True
+  plugins       :True
+  id            :True
+  configurations:True
+    -COMMANDS-
+      coredumpWithAppsSqif:{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems including apps sqif'}
+      eraseApps           :{'run': './tools/python27/python.exe', 'description': 'Run pydbg to erase the apps area'}
+      config_tool         :{'run': './tools/bin/ADKConfigTool.exe', 'description': 'Run the config tool'}
+      setMemoryOption     :{'run': './tools/python27/python.exe', 'description': 'Setup Memory Module Type to support'}
+      scramble_aspk       :{'run': './tools/python27/python.exe', 'description': 'Scramble ASPK'}
+      deploy              :{'run': './tools/python27/python.exe', 'description': 'Deploys an ADK Project binary to a device'}
+      make                :{'run': 'bin/make.exe', 'description': 'GNU Make'}
+      coredump            :{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems'}
+      versions_workspace  :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various workspace files'}
+      privateLibExport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+      buildDFU            :{'run': './tools/python27/python.exe', 'description': 'Collect or build input files and create DFU file'}
+      build               :{'run': './tools/python27/python.exe', 'description': 'Builds an ADK Project'}
+      clean               :{'run': './tools/python27/python.exe', 'description': 'Clean an ADK Project'}
+      pydbgCoredump       :{'run': './tools/python27/python.exe', 'description': 'Run pydbg on a coredump'}
+      dfu_setup           :{'run': './tools/python27/python.exe', 'description': 'Setup DFU security'}
+      buildFlashImage     :{'run': './tools/python27/python.exe', 'description': 'Generate a single flash image file'}
+      versions_devkit     :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various devkit files'}
+      privateLibImport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+====================
+-TOOLS-
+  system:{'device': 'plugins/debugger/device_control_hydra.dll', 'core_groups': {'app': {'p1': 'plugins/debugger/core_debug_kalimba.dll'}, 'audio': {'p0': 'plugins/debugger/core_debug_kalimba.dll', 'p1': 'plugins/debugger/core_debug_kalimba.dll'}}}
+
+>>> [C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/bin/make.exe SDK=C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools DEVKIT_ROOT=C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26 -s -j12 build -f D:/QCC_Project/TEST1QCC3021/apps/applications/sink/qcc512x_qcc302x/common/sink.speaker.mak MAKEFILE_RULES_DIR=C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools]
+
+
+
+
+
+
+
+C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/bin
+Using C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\tools/Makefile.rules
+SDK is C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools
+BUILDING FOR qcc512x_qcc302x
+Default
+Using Default prompts in image directory. Updating prompts from ../../sink_prompts/speaker to customer_ro_filesystem/*
+Creating Audio prompts directories
+??? 11 ???
+??? 11 ???
+????? - *.txt
+??? 0 ???
+
+
+
+================================
+PROJECT INFO 
+================================
+  project_file = D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common\customer_ro_filesystem.x2p
+   devkit_root = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+ configuration = filesystem
+-PROJECT PROPERTIES-
+  IDE_PROJECT:customer_ro_filesystem
+  OUTDIR     :D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common
+
+SOURCE FILES
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aec_reference.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_demux.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_async_wbs.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_switched_passthrough_consumer.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_decode.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_anc_tuning.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_adaptive_decode.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_adaptive_demux.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_rtp_decode.edkcs
+D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_opus_celt_encode.edkcs
+
+CONFIG NAME = filesystem
+PROPS
+defaultdict(<type 'str'>, {'DEFS': '', 'QUICKCHARGE_CONFIG': '../../quick_charge_config/smb1352_default.xml', 'LIBPATHS': '', 'DBG_CORE': '', 'INCPATHS': '', 'system_label': 'QCC512X_CONFIG', 'STRIP_SYMBOLS': '', 'OUTPUT_TYPE': '', 'LIBS': '', 'OUTPUT': '', 'FS_ROOT': '..\\customer_ro_filesystem', 'TYPE': 'customer_ro', 'BUILD_TYPE': '', 'PRESERVED_LIBS': ''})
+------------------------------------
+DEVKIT INFO 
+------------------------------------
+  Param -d =  C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26
+  Script =  C:/qtil/ADK_QCC512X_QCC302X_WIN_6.4.2.26/tools/ubuild/ubuild.py
+  XML FILE = C:\qtil\ADK_QCC512X_QCC302X_WIN_6.4.2.26\merge_ubuild.chk
+-KITIDENT-
+  compatibility_list:['{34E71291-920E-4fe0-8871-5F119C8D0E40}']
+  uuid              :{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  checksum          :4f7d43da67eab9fee1b3281d4115cc6b
+  URI               :kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}
+  build_time        :1576071077.869456
+  filter            :qcc3400;qcc512*;qcc302*;qcc303*
+  version           :6.4.2
+  build             :26
+  dependencies      :
+            
+  fsprefix          :qcc512x_qcc302x
+  devkit_group      :{BBAC163C-41BE-4ce7-B236-236F15FF18CA}
+  target            :x86
+-TOP LEVEL ELEMENTS-
+  info          :True
+  commands      :True
+  toolchain     :True
+  ext_id        :True
+  doc           :True
+  ext_info      :True
+  locks         :True
+  plugins       :True
+  id            :True
+  configurations:True
+    -COMMANDS-
+      coredumpWithAppsSqif:{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems including apps sqif'}
+      eraseApps           :{'run': './tools/python27/python.exe', 'description': 'Run pydbg to erase the apps area'}
+      config_tool         :{'run': './tools/bin/ADKConfigTool.exe', 'description': 'Run the config tool'}
+      setMemoryOption     :{'run': './tools/python27/python.exe', 'description': 'Setup Memory Module Type to support'}
+      scramble_aspk       :{'run': './tools/python27/python.exe', 'description': 'Scramble ASPK'}
+      deploy              :{'run': './tools/python27/python.exe', 'description': 'Deploys an ADK Project binary to a device'}
+      make                :{'run': 'bin/make.exe', 'description': 'GNU Make'}
+      coredump            :{'run': './tools/python27/python.exe', 'description': 'Coredump all sub-systems'}
+      versions_workspace  :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various workspace files'}
+      privateLibExport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+      buildDFU            :{'run': './tools/python27/python.exe', 'description': 'Collect or build input files and create DFU file'}
+      build               :{'run': './tools/python27/python.exe', 'description': 'Builds an ADK Project'}
+      clean               :{'run': './tools/python27/python.exe', 'description': 'Clean an ADK Project'}
+      pydbgCoredump       :{'run': './tools/python27/python.exe', 'description': 'Run pydbg on a coredump'}
+      dfu_setup           :{'run': './tools/python27/python.exe', 'description': 'Setup DFU security'}
+      buildFlashImage     :{'run': './tools/python27/python.exe', 'description': 'Generate a single flash image file'}
+      versions_devkit     :{'run': './tools/python27/python.exe', 'description': 'Discover versions of various devkit files'}
+      privateLibImport    :{'run': './tools/python27/python.exe', 'description': 'Import a private private library into a project'}
+====================
+-TOOLS-
+  system:{'device': 'plugins/debugger/device_control_hydra.dll', 'core_groups': {'app': {'p1': 'plugins/debugger/core_debug_kalimba.dll'}, 'audio': {'p0': 'plugins/debugger/core_debug_kalimba.dll', 'p1': 'plugins/debugger/core_debug_kalimba.dll'}}}
+
+
+
+
+
+
+Copying files to customer_ro filesystem...
+
+
+Copying files added to customer_ro filesystem project...
+
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aec_reference.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_demux.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_async_wbs.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_switched_passthrough_consumer.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_decode.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_anc_tuning.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_adaptive_decode.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_aptx_adaptive_demux.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_rtp_decode.edkcs
+Copying file D:\QCC_Project\TEST1QCC3021\audio\kalimba_ROM_4786\kymera\prebuilt_dkcs\stre_rom_v02_release\download_opus_celt_encode.edkcs
+
+Copying files under FS_ROOT...
+FS_ROOT (..\customer_ro_filesystem) with working dir (D:\QCC_Project\TEST1QCC3021\apps\applications\sink\qcc512x_qcc302x\common):
+Copying file ..\customer_ro_filesystem\audio_prompt_config.csr
+Copying file ..\customer_ro_filesystem\config_definition.gz
+Copying file ..\customer_ro_filesystem\START.HTM
+Copying file ..\customer_ro_filesystem\usb_fat
+Copying file ..\customer_ro_filesystem\usb_root
+Copying file ..\customer_ro_filesystem\headers\0.idx
+Copying file ..\customer_ro_filesystem\headers\1.idx
+Copying file ..\customer_ro_filesystem\headers\10.idx
+Copying file ..\customer_ro_filesystem\headers\11.idx
+Copying file ..\customer_ro_filesystem\headers\2.idx
+Copying file ..\customer_ro_filesystem\headers\3.idx
+Copying file ..\customer_ro_filesystem\headers\4.idx
+Copying file ..\customer_ro_filesystem\headers\5.idx
+Copying file ..\customer_ro_filesystem\headers\6.idx
+Copying file ..\customer_ro_filesystem\headers\7.idx
+Copying file ..\customer_ro_filesystem\headers\8.idx
+Copying file ..\customer_ro_filesystem\headers\9.idx
+Copying file ..\customer_ro_filesystem\prompts\0.prm
+Copying file ..\customer_ro_filesystem\prompts\1.prm
+Copying file ..\customer_ro_filesystem\prompts\10.prm
+Copying file ..\customer_ro_filesystem\prompts\11.prm
+Copying file ..\customer_ro_filesystem\prompts\2.prm
+Copying file ..\customer_ro_filesystem\prompts\3.prm
+Copying file ..\customer_ro_filesystem\prompts\4.prm
+Copying file ..\customer_ro_filesystem\prompts\5.prm
+Copying file ..\customer_ro_filesystem\prompts\6.prm
+Copying file ..\customer_ro_filesystem\prompts\7.prm
+Copying file ..\customer_ro_filesystem\prompts\8.prm
+Copying file ..\customer_ro_filesystem\prompts\9.prm
+Copying file ..\customer_ro_filesystem\quick_charge_config\chargerConfig.hex
+5 words used to enforce data alignment.
+Packing directory...
+Translating filesystem image by 0x000000
+  Header block starting at 0x00000000, 12 bytes
+  Entry metadata block starting at 0x0000000c, 540 bytes
+  Names block starting at 0x00000228, 636 bytes
+  File data block starting at 0x000004a4, 576240 bytes
+  Footer block starting at 0x0008cf94, 24 bytes
