@@ -1013,7 +1013,7 @@
             <BuildVariant
                 HwVariant="QCC3021-AA_DEV-BRD-R2-AA"
                 SwVariant="Speaker_with_TWS"
-                Value="PIO 23" />
+                Value="N/A" />
         </ConfigItem>
         <ConfigItem
             Id="Aux Out Detect PIO"
@@ -1057,6 +1057,10 @@
             <BuildVariant HwVariant="CF376_CE826 CF376_CF212 CF376_CF429 CF376_CF440 CF376_CG724 CF376_CF897 CF819 QCC3024-AA_DEV-BRD-R2-AA QCC3034-AA_DEV-BRD-R2-AA QCC5124-AA_DEV-BRD-R2-AA QCC3020-AA_DEV-BRD-R2-AA QCC3021-AA_DEV-BRD-R2-AA QCC3031-AA_DEV-BRD-R2-AA QCC5120-AB_DEV-BRD-R2-AA QCC5124-BA_FORMFACTOR-AA QCC5126-AB_DEV-BRD-R2-AA QCC5127-AA_DEV-BRD-R2-AA QCC5127-AB_DEV-BRD-R2-AA"
                           SwVariant="All"
                           Value="N/A" />
+            <BuildVariant
+                HwVariant="QCC3021-AA_DEV-BRD-R2-AA"
+                SwVariant="Speaker_with_TWS"
+                Value="PIO 22" />
         </ConfigItem>
         <ConfigItem
             Id="Power On Audio Mute"
@@ -1072,6 +1076,10 @@
                           SwVariant="All"
                           Value="PIO 32" />
             <BuildVariant HwVariant="CF376_CG724" SwVariant="All" Value="PIO 58" />
+            <BuildVariant
+                HwVariant="QCC3021-AA_DEV-BRD-R2-AA"
+                SwVariant="Speaker_with_TWS"
+                Value="PIO 22" />
         </ConfigItem>
         <ConfigItem
             Id="Enable audio source by assigning it to Priority 1."

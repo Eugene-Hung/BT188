@@ -386,6 +386,10 @@
                       value="14"/>
             <bitfield key="PIO 31/LED 1"
                       value="15"/>
+            <BuildVariant
+                HwVariant="QCC3021-AA_DEV-BRD-R2-AA"
+                SwVariant="Speaker_with_TWS"
+                Value="PIO 22 | PIO 23" />
         </ConfigItem>
         <ConfigItem
             Id="Mapping PIO 32-47"

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<project name="sink" path="">
+<project name="sink" path="D:/QCC_Project/TEST1QCC3021/apps/applications/sink/qcc512x_qcc302x/common/">
     <configurations defaultKit="kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}">
         <configuration name="Activity_Monitoring_Headset" kit="kitres://{8c4e77ed-c5b5-4e4b-a9b2-3c8086459e75}" options="clean|build|deploy|run">
             <deployProject>deploy</deployProject>
@@ -193,7 +193,7 @@
             <property name="CHIP_TYPE">qcc512x_qcc302x</property>
             <property name="DBG_CORE">app/p1</property>
             <property name="DEFAULT_LIBS">usb_early_init</property>
-            <property name="DEFS">__KALIMBA__ HAVE_32BIT_DATA_WIDTH INSTALL_HYDRA_LOG BLUELAB HYDRACORE TRAPSET_CORE=1 TRAPSET_PSU=1</property>
+            <property name="DEFS">__KALIMBA__ HAVE_32BIT_DATA_WIDTH INSTALL_HYDRA_LOG BLUELAB HYDRACORE TRAPSET_CORE=1 TRAPSET_PSU=1 DEBUG_STATES</property>
             <property name="EXTRA_WARNINGS">FALSE</property>
             <property name="FLASH_CONFIG">..\..\64Mbit_default_flash_config.py</property>
             <property name="HW_VARIANT">QCC3021-AA_DEV-BRD-R2-AA</property>

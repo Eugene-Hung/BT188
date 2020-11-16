@@ -1149,11 +1149,15 @@ void stateManagerAmpPowerControl(power_control_dir control)
                 PioDrivePio(PIO_AMP_MUTE, TRUE);
                 sinkCancelAndSendLater(EventSysAmpPowerDown, sinkAudioAmpPowerDownTime());
                 sinkAudioSetAmpReady(FALSE);
+                SM_DEBUG(("AMP HIGH \n"));
             }
             else
             {
             /*  Power down the amplifier  */
-                PioDrivePio(sinkAudioGetPowerOnPio(), FALSE);            
+                PioDrivePio(0x17, FALSE);
+
+                PioDrivePio(sinkAudioGetPowerOnPio(), FALSE);
+                SM_DEBUG(("P23 LOW  \n"));            
             }
         }
         else
@@ -1166,6 +1170,8 @@ void stateManagerAmpPowerControl(power_control_dir control)
             else
             {
             /*  Power up the amplifier and queue an event to unmute it  */
+                PioDrivePio(0x17, TRUE);
+
                 PioDrivePio(sinkAudioGetPowerOnPio(), TRUE);            
                 sinkCancelAndSendLater(EventSysAmpPowerUp, sinkAudioAmpPowerUpTime());
                 sinkAudioSetAmpReady(TRUE);
